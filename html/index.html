@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velora | Mini Fashion Store</title>
+    <meta
+      name="description"
+      content="Shop quần áo thời trang nam nữ với phong cách tối giản, trẻ trung và hiện đại."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <p>Miễn phí vận chuyển từ 500k | Mua 2 giảm 10% </p>
+    </header>
+
+    <nav class="navbar container">
+      <div class="brand">VELORA</div>
+      <div class="nav-links">
+        <a href="#home">Trang chủ</a>
+        <a href="#shop">Cửa hàng</a>
+        <a href="#features">Vì sao chọn</a>
+        <a href="#reviews">Đánh giá</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-btn" aria-label="Tìm kiếm">⌕</button>
+        <button class="cart-btn" id="open-cart" aria-label="Mở giỏ hàng">
+          Giỏ hàng <span id="cart-count">0</span>
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero container" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">Bộ sưu tập mới</p>
+          <h1>Quần áo tối giản cho cuộc sống năng động.</h1>
+          <p class="hero-text">
+            Tạo phong cách riêng ngay hôm nay với các thiết kế hiện đại, chất liệu
+            bền đẹp và giá cả hợp lý cho mọi nhu cầu mặc hằng ngày.
+          </p>
+          <div class="hero-actions">
+            <a href="#shop" class="primary-btn">Mua ngay</a>
+            <a href="#features" class="secondary-btn">Khám phá</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>1.5K+</strong><span>Khách hàng</span></li>
+            <li><strong>4.9/5</strong><span>Đánh giá</span></li>
+            <li><strong>48h</strong><span>Giao hàng</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="image-card main-card">
+            <img
+              src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80"
+              alt="Mẫu quần áo thời trang"
+            />
+          </div>
+          <div class="floating-badge badge-top">New Drop</div>
+          <div class="floating-badge badge-bottom">-30%</div>
+        </div>
+      </section>
+
+      <section class="promo container">
+        <div class="promo-item">
+          <span>01</span>
+          <div>
+            <h3>Thiết kế hiện đại</h3>
+            <p>Phong cách năng động, tối giản nhưng không nhàm chán.</p>
+          </div>
+        </div>
+        <div class="promo-item">
+          <span>02</span>
+          <div>
+            <h3>Chất liệu an toàn</h3>
+            <p>Vải mềm, thoải mái và dễ chăm sóc mỗi ngày.</p>
+          </div>
+        </div>
+        <div class="promo-item">
+          <span>03</span>
+          <div>
+            <h3>Giá tốt</h3>
+            <p>Đa dạng mức giá phù hợp với mọi ngân sách.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories container">
+        <div class="section-heading">
+          <p class="eyebrow">Phân loại</p>
+          <h2>Khám phá theo kiểu dáng</h2>
+        </div>
+        <div class="category-grid">
+          <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80" alt="Áo thun" />
+            <span>Áo thun</span>
+          </div>
+          <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80" alt="Áo khoác" />
+            <span>Áo khoác</span>
+          </div>
+          <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80" alt="Quần jean" />
+            <span>Quần jean</span>
+          </div>
+          <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" alt="Đầm" />
+            <span>Đầm</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="shop container" id="shop">
+        <div class="section-heading shop-header">
+          <div>
+            <p class="eyebrow">Bestseller</p>
+            <h2>Sản phẩm nổi bật</h2>
+          </div>
+          <div class="filters">
+            <button class="filter-btn active" data-filter="all">Tất cả</button>
+            <button class="filter-btn" data-filter="ao">Áo</button>
+            <button class="filter-btn" data-filter="quan">Quần</button>
+            <button class="filter-btn" data-filter="dam">Đầm</button>
+          </div>
+        </div>
+
+        <div class="search-box">
+          <input
+            id="search-input"
+            type="text"
+            placeholder="Tìm kiếm sản phẩm..."
+            aria-label="Tìm kiếm sản phẩm"
+          />
+        </div>
+
+        <div class="product-grid" id="product-grid"></div>
+      </section>
+
+      <section class="features container" id="features">
+        <div class="section-heading">
+          <p class="eyebrow">Dịch vụ</p>
+          <h2>Vì sao khách hàng tin tưởng</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon">✦</div>
+            <h3>Thiết kế mới mỗi tuần</h3>
+            <p>Cập nhật xu hướng thời trang hiện đại, phù hợp mọi độ tuổi.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Giao hàng nhanh</h3>
+            <p>Đặt hàng trong ngày, giao đến tận nơi trong 48 giờ.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">✓</div>
+            <h3>Đổi trả dễ dàng</h3>
+            <p>Hỗ trợ đổi trả trong 7 ngày nếu sản phẩm không đúng mô tả.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="reviews container" id="reviews">
+        <div class="section-heading">
+          <p class="eyebrow">Khách hàng</p>
+          <h2>Đánh giá từ người mua</h2>
+        </div>
+        <div class="review-grid">
+          <article class="review-card">
+            <p>“Áo rất đẹp, chất vải mềm và form chuẩn. Mình mua lần thứ 2 rồi.”</p>
+            <div class="review-author">
+              <strong>Lan Anh</strong>
+              <span>Khách hàng 2025</span>
+            </div>
+          </article>
+          <article class="review-card">
+            <p>“Shop giao hàng nhanh, đóng gói cẩn thận. Sản phẩm đúng như hình.”</p>
+            <div class="review-author">
+              <strong>Đức Minh</strong>
+              <span>Khách hàng 2025</span>
+            </div>
+          </article>
+          <article class="review-card">
+            <p>“Chất lượng tốt với mức giá phải chăng. Mình sẽ giới thiệu cho bạn bè.”</p>
+            <div class="review-author">
+              <strong>Hà My</strong>
+              <span>Khách hàng 2025</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="newsletter container">
+        <div>
+          <p class="eyebrow">Ưu đãi</p>
+          <h2>Nhận mã giảm 10% cho đơn hàng đầu tiên</h2>
+        </div>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Email của bạn" aria-label="Email" />
+          <button type="submit">Đăng ký</button>
+        </form>
+      </section>
+    </main>
+
+    <aside class="cart-panel" id="cart-panel">
+      <div class="cart-header">
+        <h3>Giỏ hàng</h3>
+        <button id="close-cart" aria-label="Đóng giỏ hàng">×</button>
+      </div>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="cart-total-row">
+          <span>Tổng</span>
+          <strong id="cart-total">0₫</strong>
+        </div>
+        <button class="checkout-btn">Thanh toán</button>
+      </div>
+    </aside>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
